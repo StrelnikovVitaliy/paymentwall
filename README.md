@@ -1,13 +1,3 @@
-# gulp-scss-starter
-![Uses](https://img.shields.io/badge/uses-HTML%2C%20SCSS%2C%20ES6-informational.svg)
-<a href="https://www.tinkoff.ru/cardtocard/">
-<img src="https://camo.githubusercontent.com/7a6205263a4d822fb5cbf5b8537cad5fb84b1e6b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646f6e617465253230746f2532306d652d353533362532303931333725323035323838253230313933342d696e666f726d6174696f6e616c2e7376673f75726c3d68747470733a2f2f7777772e74696e6b6f66662e72752f63617264746f636172642f">
-</a>
-![GitHub release](https://img.shields.io/github/release/andreyalexeich/gulp-scss-starter.svg)
-![David](https://img.shields.io/david/andreyalexeich/gulp-scss-starter.svg)
-![GitHub stars](https://img.shields.io/github/stars/andreyalexeich/gulp-scss-starter.svg?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/andreyalexeich/gulp-scss-starter.svg?style=social)
-
 ## Особенности
 * именование классов по [БЭМ](https://ru.bem.info/)
 * используется БЭМ-структура
@@ -109,9 +99,6 @@ blocks
 ```
 Чтобы вручную не создавать соответствующие папку и файлы, достаточно в консоли прописать команду ```bem create my-block``` - для создания папки БЭМ-блока, где ```my-block``` - имя БЭМ-блока
 
-### Страницы проекта
-* страницы проекта находятся в папке ```src/views/pages```
-    * главная страница: ```src/views/index.html```
 
 ### Шрифты
 * шрифты находятся в папке ```src/fonts```
@@ -181,13 +168,3 @@ blocks
     }
 }
 ```
-
-## Нужен SCSS + Pug?
-Используйте [эту](https://github.com/andreyalexeich/gulp-pug-starter/) сборку.
-
-## Нравится проект?
-Сообщайте мне о [багах](https://github.com/andreyalexeich/gulp-pug-starter/issues), ставьте звёздочку в правом верхнем углу, [задонатьте](https://www.tinkoff.ru/cardtocard/) мне на пиво :beer:
-
-## Контакты
-* ВКонтакте: [@andreyalexeich](https://vk.com/andreyalexeich)
-* Telegram: [@andreyalexeich](https://t-do.ru/andreyalexeich)

@@ -1,26 +1,411 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gulp-scss-starter</title>
-        <meta name="theme-color" content="#c9e0e04d">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
-        <link rel="stylesheet" href="../styles/main.css">
-    </head>
-    <body>
-        @@include("../blocks/header/header.html")
-        @@include("../blocks/footer/footer.html")
-        <script src="../js/main.js"></script>
-    </body>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <script
+      type="text/javascript"
+      src="http://shjs.sourceforge.net/sh_main.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://shjs.sourceforge.net/lang/sh_javascript.js"
+    ></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="http://shjs.sourceforge.net/css/sh_pablo.css"
+    />
+    <title>PaymentWall</title>
+
+    <link rel="stylesheet" href="../styles/main.css" />
+    <script src="../js/main.js"></script>
+  </head>
+  <body onload="sh_highlightDocument();">
+    <div class="container">
+      <div class="header">
+        <a href="#">
+          <img src="img/logo.png" alt="Logo" />
+          Paymentwall
+          <span>API</span>
+        </a>
+
+        <button class="menu" onclick="openNav()">
+          <img src="img/menu.svg" alt="" />
+        </button>
+        <div class="login-desktop">
+          <a href="#" class="registration">Don’t have a PW Account?</a>
+          <button class="signup">SIGN UP</button>
+        </div>
+      </div>
+
+      <div class="languages">
+        <button
+          class="tablinks"
+          onclick="openExample(event, 'javascript-init', 'javascript-store')"
+          id="defaultOpen"
+        >
+          Javascript
+        </button>
+        <button
+          class="tablinks"
+          onclick="openExample(event, 'java-init', 'java-store')"
+        >
+          Java
+        </button>
+        <button
+          class="tablinks"
+          onclick="openExample(event, 'php-init', 'php-store')"
+        >
+          PHP
+        </button>
+        <button
+          class="tablinks"
+          onclick="openExample(event, 'net-init', 'net-store')"
+        >
+          .Net
+        </button>
+        <button
+          class="tablinks"
+          onclick="openExample(event, 'python-init', 'python-store')"
+        >
+          Python
+        </button>
+      </div>
+      <div id="sideMenu" class="navigation">
+        <button class="close-button" onclick="closeNav()">
+          <img src="img/close-button.png" alt="close" />
+        </button>
+        <div class="login-mobile">
+          <button class="signup">SIGN UP</button>
+          <a href="#" class="registration">Don’t have a PW Account?</a>
+        </div>
+        <div class="categories">
+          <h4>PAYALTO</h4>
+          <ul>
+            <h5 class="active">Digital Goods</h5>
+            <li>Stored widget call</li>
+            <li>Non-stored Widget call</li>
+            <li>Optional Parameters</li>
+            <h5>Virtual Currency</h5>
+            <li>Widget Call</li>
+            <h5>Callback</h5>
+            <h5>Pingback processing</h5>
+            <li>Introduction</li>
+            <li>HTTP Pingback</li>
+            <li>Email pingback</li>
+            <li>Expect Response</li>
+          </ul>
+          <h4>BRICK</h4>
+          <ul>
+            <h5>Creat oneetime token</h5>
+            <h5>Charge</h5>
+            <h5>Subscription</h5>
+          </ul>
+          <h4>MINT</h4>
+          <ul>
+            <h5>Get Epin</h5>
+            <h5>Get Balance</h5>
+            <h5>Get avaliable balance</h5>
+            <h5>Redemption</h5>
+          </ul>
+          <h4>MOBIAMO</h4>
+          <ul>
+            <h5>Price points</h5>
+          </ul>
+          <h4>Tools API</h4>
+          <ul>
+            <h5>Bridge OAuth</h5>
+            <h5>Cancellation</h5>
+            <h5>Coupons</h5>
+            <h5>Delivery Confirmation</h5>
+            <h5>Invoice</h5>
+            <h5>Payment Status</h5>
+            <h5>Payment System</h5>
+            <h5>Bridge OAuth</h5>
+            <h5>Product Details</h5>
+            <h5>Reporting</h5>
+            <h5>User Profile</h5>
+          </ul>
+        </div>
+      </div>
+
+      <div class="introduction">
+        <h1>Digital goods</h1>
+        <p>
+          Digital Goods API is mainly focused on selling In-game virtual items,
+          services and premium membership with PayAlto.
+        </p>
+        <h2>Stored widget call</h2>
+        <p>
+          It shows a widget, where stored products in Products section of
+          Merchant Account are available for payment. Both subscription and
+          one-time payment are supported in our products section.
+        </p>
+      </div>
+
+      <div class="examples" id="javascript-init">
+        <div class="init">
+          <pre class="sh_javascript">
+              <code>
+import com.paymentwall.java.Base;
+
+Base.setAppKey("YOUR_APPLICATION_KEY");
+Base.setSecretKey("YOUR_SECRET_KEY");
+Base.setApiType(Base.API_GOODS);
+                </code>
+            </pre>
+        </div>
+      </div>
+      <div class="examples" id="java-init">
+        <div class="init">
+          <pre class="sh_javascript">
+                        <code class="language-javascript">
+    java
+                    </code>
+                </pre>
+        </div>
+      </div>
+      <div class="examples" id="php-init">
+        <div class="init">
+          <pre class="sh_javascript">
+                        <code class="language-javascript">
+    php
+                        </code>
+                    </pre>
+        </div>
+      </div>
+      <div class="examples" id="net-init">
+        <div class="init">
+          <pre class="sh_javascript">
+                        <code class="language-javascript">
+    net
+                            </code>
+                        </pre>
+        </div>
+      </div>
+      <div class="examples" id="python-init">
+        <div class="init">
+          <pre class="sh_javascript">
+                        <code class="language-javascript">
+    python
+                                </code>
+                            </pre>
+        </div>
+      </div>
+
+      <div class="parameter">
+        <h2>Parameter:</h2>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Required</th>
+            <th>Format</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>key</td>
+            <td>yes</td>
+            <td>String(32)</td>
+            <td>
+              Sample: 048c51f8fc834a1467db96b683f16e70 Can be found in General
+              Settings of the Project inside of your Merchant Account
+            </td>
+          </tr>
+          <tr>
+            <td>uld</td>
+            <td>yes</td>
+            <td>String(64)</td>
+            <td>
+              Sample: test@paymentwall.com Not case-sensitive. ID of the
+              end-user in your system (usually it is an email) who is viewing
+              the widget. The maximum length is 64.
+            </td>
+          </tr>
+          <tr>
+            <td>widget</td>
+            <td>yes</td>
+            <td>String</td>
+            <td>
+              Sample: p1_1 Widget code. Can be obtained by Merchant Account ->
+              Projects -> Widgets
+            </td>
+          </tr>
+          <tr>
+            <td>email</td>
+            <td>yes</td>
+            <td>String</td>
+            <td>
+              Sample: test@paymentwall.com Paymentwall will automatically send a
+              payment receipt to the user.
+            </td>
+          </tr>
+          <tr>
+            <td>timestamp</td>
+            <td>yes</td>
+            <td>String(10)</td>
+            <td>Sample: 1477985778 Unix timestamp of the current date</td>
+          </tr>
+          <tr>
+            <td>sign_version</td>
+            <td>no</td>
+            <td>String</td>
+            <td>Sample: 2, 3 Signature Version.</td>
+          </tr>
+          <tr>
+            <td>sign</td>
+            <td>no</td>
+            <td>String</td>
+            <td>
+              Sample: 7633c3b060fa2ddd41283ff d4629ab40 Refer to Signature
+              Calculation.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="examples" id="javascript-store">
+        <div class="store">
+          <pre class="sh_javascript">
+                        <code class="language-javascript">
+import com.paymentwall.java.Widget;
+import com.paymentwall.java.WidgetBuilder;
+import java.util.LinkedHashMap;
+
+WidgetBuilder widgetBuilder = new WidgetBuilder(userid, widgetcode);
+
+widgetBuilder.setExtraParams(new LinkedHashMap &lt;String, String&gt;(){
+    {
+        put("email", email);
+        put("timestamp", timestamp);
+    }
+});
+
+Widget widget = widgetBuilder.build();
+                </code>
+            </pre>
+        </div>
+      </div>
+      <div class="examples" id="java-store">
+        <div class="store">
+          <pre class="sh_javascript">
+                        <code class="language-javascript">
+    java
+                </code>
+            </pre>
+        </div>
+      </div>
+      <div class="examples" id="php-store">
+        <div class="store">
+          <pre class="sh_javascript">
+                        <code class="language-javascript">
+    php
+                </code>
+            </pre>
+        </div>
+      </div>
+      <div class="examples" id="net-store">
+        <div class="store">
+          <pre class="sh_javascript">
+                        <code class="language-javascript">
+    net
+                </code>
+            </pre>
+        </div>
+      </div>
+      <div class="examples" id="python-store">
+        <div class="store">
+          <pre class="sh_javascript">
+                <code class="language-javascript">
+    python
+                </code>
+            </pre>
+        </div>
+      </div>
+
+      <div class="result">
+        <h2>Result:</h2>
+        <p>You will get a URL or iframe by widget object.</p>
+        <table>
+          <tr>
+            <td>
+              <ul>
+                <li>plan</li>
+                <li><span class="string">string</span></li>
+              </ul>
+            </td>
+            <td>
+              Identifies the product ID, send back as
+              <span class="goodsid">goodsid</span> parametr in<span
+                class="pingbacks"
+                >pingbacks</span
+              >. eg: productax123
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>period</li>
+                <li>required</li>
+                <li><span class="string">string</span></li>
+              </ul>
+            </td>
+            <td>day/week/month/year</td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>period_duration</li>
+                <li><span class="required">required</span></li>
+                <li><span class="string">string</span></li>
+              </ul>
+            </td>
+
+            <td>
+              Number of peroids mentioned the period parameter. By default
+              minimum duration for recurring in 3 days. This can be adjusted by
+              contacting
+              <a href="mailto:devsupport@paymentwall.com"
+                >devsupport@paymentwall.com</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script>
+      function openExample(evt, languageInit, languageStore) {
+        var i, examples, tablinks;
+        examples = document.getElementsByClassName("examples");
+        for (i = 0; i < examples.length; i++) {
+          examples[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(languageInit).style.display = "block";
+        document.getElementById(languageStore).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+    <script>
+      document.getElementById("defaultOpen").click();
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("sideMenu").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("sideMenu").style.width = "0%";
+      }
+    </script>
+  </body>
 </html>

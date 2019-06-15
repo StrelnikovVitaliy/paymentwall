@@ -7,6 +7,6 @@ h1, h2, h3, h4, h5, h6, ul {
     @include container();
     @include sm(max-width, 510px);
     @include md(max-width, 690px);
-    @include lg(max-width, 930px);
-    @include xl(max-width, 1110px);
+    @include lg(max-width, 100%);
+    @include xl(max-width, 100%);
 }

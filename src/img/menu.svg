@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14" width="22" height="14">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="API_Docs">
+		<g id="Navigation bar">
+			<path id="Rectangle 4" class="shp0" d="M1 12L21 12L21 14L1 14L1 12ZM1 6L21 6L21 8L1 8L1 6ZM1 0L21 0L21 2L1 2L1 0Z" />
+		</g>
+	</g>
+</svg>

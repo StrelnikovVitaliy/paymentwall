@@ -1,0 +1,30 @@
+$mobile-width: 250px;
+$desktop-width: 992px;
+
+@mixin tablet {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+/* backgounds*/
+$darkblue-background: #21252b;
+$medblue-background: #282c34;
+
+/* text decoration */
+$white: white;
+$orange: #fec013;
+$grey: #787878;
+$light-grey: #474747;
+$pink: #f92672;
+
+/* buttons decoration */
+$language-active: #fec013;
+$language-normal: #fff;
+

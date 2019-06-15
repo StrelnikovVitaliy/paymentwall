@@ -6,3 +6,325 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/blocks";
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+
+    .header {
+        background-color: $darkblue-background;
+        display: flex;
+        flex-direction: row;
+
+        a {
+            text-decoration: none;
+            color: $white;
+            font-size: 18px;
+            font-weight: bolder;
+            margin: 23px 0 23px 23px;
+
+            img {
+                height: 18px;
+                width: auto;
+            }
+
+            span {
+                font-weight: normal;
+                color: $orange;
+            }
+        }
+
+        @include tablet {
+            button {
+                margin-left: auto;
+                margin-right: 21px;
+                background-color: transparent;
+                border: none;
+                outline: 0;
+
+                img {
+                    height: 14px;
+                    width: 22px;
+                }
+            }
+
+            .login-desktop {
+                display: none;
+
+            }
+        }
+
+        @include desktop {
+            button {
+                display: none;
+            }
+
+            .login-desktop {
+                display: flex;
+                margin-left: auto;
+
+                button {
+                    display: block;
+                    font-family: ProximaNovaT;
+                    cursor: pointer;
+                    margin: 13px;
+                }
+
+                .signup {
+                    background-color: $light-grey;
+                    color: $white;
+                    font-weight: bold;
+                    height: 38px;
+                    width: 89px;
+                    border-radius: 3px;
+                    margin-left: 22px;
+                    margin-right: 18px;
+                }
+
+                a {
+                    font-family: ProximaNovaT;
+                    text-decoration: none;
+                    color: $light-grey;
+                    font-weight: bold;
+                }
+            }
+
+        }
+
+    }
+
+    .languages {
+        background-color: $medblue-background;
+        display: flex;
+        justify-content: space-around;
+
+
+        button {
+            background-color: inherit;
+
+            margin-top: 23px;
+            background-color: transparent;
+            border: none;
+            outline: 0;
+            color: $language-normal;
+            font-weight: bold;
+            cursor: pointer;
+            padding-bottom: 25px;
+        }
+
+        .active {
+            color: $language-active;
+            border-bottom: 2px solid $language-active;
+
+        }
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: $white;
+        overflow-x: hidden;
+        transition: 0.5s;
+
+        button {
+            background-color: transparent;
+            border: none;
+            outline: 0;
+            margin: 22px 23px 21px auto;
+            cursor: pointer;
+
+
+            img {
+                height: 18px;
+                width: auto;
+            }
+        }
+
+        .login-mobile {
+            button {
+                font-family: ProximaNovaT;
+                cursor: pointer;
+            }
+
+            .signup {
+                background-color: $light-grey;
+                color: $white;
+                font-weight: bold;
+                height: 38px;
+                width: 89px;
+                border-radius: 3px;
+                margin-left: 22px;
+                margin-right: 18px;
+
+            }
+
+            a {
+                font-family: ProximaNovaT;
+                text-decoration: none;
+                color: $light-grey;
+                font-weight: bold;
+            }
+        }
+
+        .categories {
+            margin-left: 22px;
+            font-family: ProximaNovaT;
+
+            h4 {
+                font-family: ProximaNova-Bold;
+                color: $light-grey;
+                margin-bottom: 23px;
+                cursor: pointer;
+            }
+
+            h5 {
+                margin-bottom: 10px;
+                letter-spacing: 1.5px;
+                cursor: pointer;
+
+                &.active {
+                    color: blue;
+                }
+
+            }
+
+            li {
+                margin-bottom: 10px;
+                margin-left: 30px;
+                list-style: none;
+                cursor: pointer;
+
+            }
+
+        }
+
+    }
+
+    h1 {
+        font-size: 52px;
+        font-family: ProximaNovaT;
+        font-weight: 100;
+        margin: 36px 0 38px 23px;
+    }
+
+    h2 {
+        font-family: ProximaNova-Bold;
+        color: $grey;
+        margin: 32px 0 21px 23px;
+    }
+
+    p {
+        font-family: ProximaNovaT;
+        font-size: 16px;
+        margin: 0 23px;
+    }
+
+    .examples {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+        background-color: $darkblue-background;
+        margin: 21px 0 30px 0;
+
+        pre {
+            background-color: $medblue-background;
+            margin: 20px;
+            padding-left: 10px;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+
+        }
+    }
+
+    .parameter {
+        table {
+            display: block;
+            overflow-x: auto;
+            border-collapse: collapse;
+
+            tr {
+                border: 1px solid lightgray;
+
+                th {
+                    font-weight: bold;
+                    color: $grey;
+                    border: 1px solid grey;
+                    padding: 10px;
+
+                }
+
+                td {
+                    vertical-align: text-top;
+                    border: 1px solid lightgray;
+                    text-align: center;
+                    padding: 10px;
+
+                    &:first-of-type {
+                        padding-left: 22px;
+                        text-align: left;
+                    }
+
+                    &:last-of-type {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .result {
+        table {
+            margin-top: 40px;
+
+            tr {
+                td {
+                    padding-left: 10px;
+                    vertical-align: text-top;
+                    padding-bottom: 44px;
+                    line-height: 27px;
+
+                    .goodsid {
+                        color: $pink;
+                        background-color: #f9fafd;
+                        border: 1px solid lightgray;
+                        padding: 3px;
+                    }
+
+                    .pingbacks {
+                        color: #3a72c7;
+                    }
+
+
+                    &:first-of-type {
+                        padding-left: 11px;
+
+                        ul {
+                            .string {
+                                color: $grey;
+                            }
+
+                            .required {
+                                color: $orange;
+                            }
+
+                            li {
+                                list-style-type: none;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
