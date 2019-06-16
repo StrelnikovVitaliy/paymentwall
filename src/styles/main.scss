@@ -220,22 +220,25 @@
             margin-left: 22px;
             font-family: ProximaNovaT;
 
-            h4 {
+            h3 {
                 font-family: ProximaNova-Bold;
                 color: $light-grey;
                 margin-bottom: 23px;
                 cursor: pointer;
             }
 
-            h5 {
+            a {
                 margin-bottom: 10px;
-                letter-spacing: 1.5px;
+                text-decoration: none;
+                letter-spacing: 1.2px;
                 cursor: pointer;
-
-                &.active {
-                    color: blue;
-                }
-
+                font-weight: 500;
+                margin-bottom: 20px;
+                margin-left: -30px;
+                color: $light-grey;
+            }
+            .active {
+                color: blue;
             }
 
             li {

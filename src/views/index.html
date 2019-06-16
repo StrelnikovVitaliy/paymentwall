@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       type="text/javascript"
       src="http://shjs.sourceforge.net/sh_main.js"
@@ -29,13 +26,13 @@
     <div class="container">
       <div class="header">
         <a href="#">
-          <img src="img/logo.png" alt="Logo" />
+          <img src="img/logo.png" alt="" />
           Paymentwall
           <span>API</span>
         </a>
 
         <button class="menu" onclick="openNav()">
-          <img src="img/menu.svg" alt="" />
+          <img src="img/menu.svg" alt="menu" />
         </button>
         <div class="login-desktop">
           <a href="#" class="registration">Don’t have a PW Account?</a>
@@ -85,51 +82,51 @@
           <a href="#" class="registration">Don’t have a PW Account?</a>
         </div>
         <div class="categories">
-          <h4>PAYALTO</h4>
+          <h3>PAYALTO</h3>
           <ul>
-            <h5 class="active">Digital Goods</h5>
+            <li><a href="#" class="active">Digital Goods</a></li>
             <li>Stored widget call</li>
             <li>Non-stored Widget call</li>
             <li>Optional Parameters</li>
-            <h5>Virtual Currency</h5>
+            <li><a href="#">Virtual Currency</a></li>
             <li>Widget Call</li>
-            <h5>Callback</h5>
-            <h5>Pingback processing</h5>
+            <li><a href="#">Callback</a></li>
+            <li><a href="#">Pingback processing</a></li>
             <li>Introduction</li>
             <li>HTTP Pingback</li>
             <li>Email pingback</li>
             <li>Expect Response</li>
           </ul>
-          <h4>BRICK</h4>
+          <h3>BRICK</h3>
           <ul>
-            <h5>Creat oneetime token</h5>
-            <h5>Charge</h5>
-            <h5>Subscription</h5>
+            <li><a href="#">Creat oneetime token</a></li>
+            <li><a href="#">Charge</a></li>
+            <li><a href="#">Subscription</a></li>
           </ul>
-          <h4>MINT</h4>
+          <h3>MINT</h3>
           <ul>
-            <h5>Get Epin</h5>
-            <h5>Get Balance</h5>
-            <h5>Get avaliable balance</h5>
-            <h5>Redemption</h5>
+            <li><a href="#">Get Epin</a></li>
+            <li><a href="#">Get Balance</a></li>
+            <li><a href="#">Get avaliable balance</a></li>
+            <li><a href="#">Redemption</a></li>
           </ul>
-          <h4>MOBIAMO</h4>
+          <h3>MOBIAMO</h3>
           <ul>
-            <h5>Price points</h5>
+            <li><a href="#">Price points</a></li>
           </ul>
-          <h4>Tools API</h4>
+          <h3>Tools API</h3>
           <ul>
-            <h5>Bridge OAuth</h5>
-            <h5>Cancellation</h5>
-            <h5>Coupons</h5>
-            <h5>Delivery Confirmation</h5>
-            <h5>Invoice</h5>
-            <h5>Payment Status</h5>
-            <h5>Payment System</h5>
-            <h5>Bridge OAuth</h5>
-            <h5>Product Details</h5>
-            <h5>Reporting</h5>
-            <h5>User Profile</h5>
+            <li><a href="#">Bridge OAuth</a></li>
+            <li><a href="#">Cancellation</a></li>
+            <li><a href="#">Coupons</a></li>
+            <li><a href="#">Delivery Confirmation</a></li>
+            <li><a href="#">Invoice</a></li>
+            <li><a href="#">Payment Status</a></li>
+            <li><a href="#">Payment System</a></li>
+            <li><a href="#">Bridge OAuth</a></li>
+            <li><a href="#">Product Details</a></li>
+            <li><a href="#">Reporting</a></li>
+            <li><a href="#">User Profile</a></li>
           </ul>
         </div>
       </div>
@@ -274,8 +271,8 @@ Base.setApiType(Base.API_GOODS);
             <td>no</td>
             <td>String</td>
             <td>
-              Sample: 7633c3b060fa2ddd41283ff d4629ab40 
-              Refer to <span class="signature">Signature Calculation</span> .
+              Sample: 7633c3b060fa2ddd41283ff d4629ab40 Refer to
+              <span class="signature">Signature Calculation</span> .
             </td>
           </tr>
         </table>
@@ -310,7 +307,9 @@ widget.getHtmlCode();
           </pre>
           <p>
             &lt;iframe src="
-              <span class="api">https://api.paymentwall.com/api/subscription?uid=paymentwalltest&widget=p1_1&sign_version=3&sign=f05c73860fe07d37a4b04225b71e8157bfdacafb4a5259bd342db86098d201af&key=6e380d3e4954ef8296676f8a41cac692&email=test%40paymentwall.com&timestamp=1478057670</span>
+            <span class="api"
+              >https://api.paymentwall.com/api/subscription?uid=paymentwalltest&widget=p1_1&sign_version=3&sign=f05c73860fe07d37a4b04225b71e8157bfdacafb4a5259bd342db86098d201af&key=6e380d3e4954ef8296676f8a41cac692&email=test%40paymentwall.com&timestamp=1478057670</span
+            >
             " width="750" frameborder="0" height="800"&gt;&lt;/iframe&gt;
           </p>
         </div>
@@ -402,7 +401,7 @@ widget.getHtmlCode();
         </table>
       </div>
     </div>
-    <script>
+    <script defer>
       function openExample(evt, languageInit, languageStore) {
         var i, examples, tablinks;
         examples = document.getElementsByClassName("examples");
@@ -420,10 +419,10 @@ widget.getHtmlCode();
         evt.currentTarget.className += " active";
       }
     </script>
-    <script>
+    <script defer>
       document.getElementById("defaultOpen").click();
     </script>
-    <script>
+    <script defer>
       function openNav() {
         document.getElementById("sideMenu").style.width = "100%";
       }
