@@ -84,7 +84,7 @@
           <button class="signup">SIGN UP</button>
           <a href="#" class="registration">Don’t have a PW Account?</a>
         </div>
-        <div class="categories">
+        <div class="categories" onclick="closeNav()">
           <h4>PAYALTO</h4>
           <ul>
             <h5 class="active">Digital Goods</h5>
@@ -148,8 +148,21 @@
         </p>
       </div>
 
-      <div class="examples" id="javascript-init">
+      <div class="examples code_init" id="javascript-init">
         <div class="init">
+          <h5>Library:</h5>
+          <a href="https://github.com/paymentwall/paymentwall-java"
+            >https://github.com/paymentwall/paymentwall-java</a
+          >
+          <h5>Request URL</h5>
+          <a href="https://api.paymentwall.com/api/subscription/"
+            >https://api.paymentwall.com/api/subscription/</a
+          >
+          <h5>Request method</h5>
+          <a href="https://api.paymentwall.com/api/subscription/"
+            >https://api.paymentwall.com/api/subscription/</a
+          >
+          <h5>Initialize</h5>
           <pre class="sh_javascript">
               <code>
 import com.paymentwall.java.Base;
@@ -161,7 +174,7 @@ Base.setApiType(Base.API_GOODS);
             </pre>
         </div>
       </div>
-      <div class="examples" id="java-init">
+      <div class="examples code_init" id="java-init">
         <div class="init">
           <pre class="sh_javascript">
                         <code class="language-javascript">
@@ -170,7 +183,7 @@ Base.setApiType(Base.API_GOODS);
                 </pre>
         </div>
       </div>
-      <div class="examples" id="php-init">
+      <div class="examples code_init" id="php-init">
         <div class="init">
           <pre class="sh_javascript">
                         <code class="language-javascript">
@@ -179,7 +192,7 @@ Base.setApiType(Base.API_GOODS);
                     </pre>
         </div>
       </div>
-      <div class="examples" id="net-init">
+      <div class="examples code_init" id="net-init">
         <div class="init">
           <pre class="sh_javascript">
                         <code class="language-javascript">
@@ -188,7 +201,7 @@ Base.setApiType(Base.API_GOODS);
                         </pre>
         </div>
       </div>
-      <div class="examples" id="python-init">
+      <div class="examples code_init" id="python-init">
         <div class="init">
           <pre class="sh_javascript">
                         <code class="language-javascript">
@@ -268,8 +281,9 @@ Base.setApiType(Base.API_GOODS);
         </table>
       </div>
 
-      <div class="examples" id="javascript-store">
+      <div class="examples code_store" id="javascript-store">
         <div class="store">
+          <h5>Stored Widget Call</h5>
           <pre class="sh_javascript">
                         <code class="language-javascript">
 import com.paymentwall.java.Widget;
@@ -288,9 +302,20 @@ widgetBuilder.setExtraParams(new LinkedHashMap &lt;String, String&gt;(){
 Widget widget = widgetBuilder.build();
                 </code>
             </pre>
+          <h5>Result Example</h5>
+          <pre class="sh_javascript code-result">
+                <code class="language-javascript">
+widget.getHtmlCode();
+                </code>
+          </pre>
+          <p>
+            &lt;iframe src="
+              <span class="api">https://api.paymentwall.com/api/subscription?uid=paymentwalltest&widget=p1_1&sign_version=3&sign=f05c73860fe07d37a4b04225b71e8157bfdacafb4a5259bd342db86098d201af&key=6e380d3e4954ef8296676f8a41cac692&email=test%40paymentwall.com&timestamp=1478057670</span>
+            " width="750" frameborder="0" height="800"&gt;&lt;/iframe&gt;
+          </p>
         </div>
       </div>
-      <div class="examples" id="java-store">
+      <div class="examples code_store" id="java-store">
         <div class="store">
           <pre class="sh_javascript">
                         <code class="language-javascript">
@@ -299,7 +324,7 @@ Widget widget = widgetBuilder.build();
             </pre>
         </div>
       </div>
-      <div class="examples" id="php-store">
+      <div class="examples code_store" id="php-store">
         <div class="store">
           <pre class="sh_javascript">
                         <code class="language-javascript">
@@ -308,7 +333,7 @@ Widget widget = widgetBuilder.build();
             </pre>
         </div>
       </div>
-      <div class="examples" id="net-store">
+      <div class="examples code_store" id="net-store">
         <div class="store">
           <pre class="sh_javascript">
                         <code class="language-javascript">
@@ -317,7 +342,7 @@ Widget widget = widgetBuilder.build();
             </pre>
         </div>
       </div>
-      <div class="examples" id="python-store">
+      <div class="examples code_store" id="python-store">
         <div class="store">
           <pre class="sh_javascript">
                 <code class="language-javascript">
