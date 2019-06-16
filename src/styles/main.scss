@@ -385,7 +385,7 @@
             grid-column-start: 3;
             grid-column-end: 8;
             grid-row-start: 5;
-            grid-row-end: 13;
+            grid-row-end: 11;
             margin: 23px;
         }
 
@@ -414,6 +414,9 @@
                     border: 1px solid lightgray;
                     text-align: center;
                     padding: 10px;
+                    .signature{
+                        color: $blue;
+                    }
 
                     &:first-of-type {
                         padding-left: 22px;
@@ -432,7 +435,7 @@
         @include desktop {
             grid-column-start: 3;
             grid-column-end: 8;
-            grid-row-start: 13;
+            grid-row-start: 11;
             grid-row-end: 18;
             margin: 23px;
         }
