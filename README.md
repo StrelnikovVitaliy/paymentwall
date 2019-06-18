@@ -6,3 +6,10 @@
 * скачайте необходимые зависимости: ```yarn```
 * чтобы начать работу, введите команду: ```yarn run dev``` (режим разработки)
 * чтобы собрать проект, введите команду ```yarn run build``` (режим сборки)
+
+## Links
+[Link to the test result](https://strelnikovvitaliy.github.io/paymentwalltest.github.io/)
+
+[Link to the built project](https://github.com/StrelnikovVitaliy/paymentwalltest.github.io)
+
+[link to the development source](https://github.com/StrelnikovVitaliy/paymentwall)
