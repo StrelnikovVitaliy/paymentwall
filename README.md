@@ -12,4 +12,4 @@
 
 [Link to the built project](https://github.com/StrelnikovVitaliy/paymentwalltest.github.io)
 
-[link to the development source](https://github.com/StrelnikovVitaliy/paymentwall)
+[Link to the development source](https://github.com/StrelnikovVitaliy/paymentwall)
